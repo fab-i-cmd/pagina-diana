@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen en Espacio Grande</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Fondo claro */
+            height: 100%; /* Asegura que ocupe toda la altura */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra el contenido vertical y horizontalmente */
+            padding-top: 30px; /* Espacio superior */
+        }
+
+        .contenedor {
+            background-color: #fff;
+            width: 800px;
+            max-width: 90%; /* Asegura que el contenedor se ajuste a pantallas pequeñas */
+            height: 500px; /* Ajusta la altura del contenedor para la imagen */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra la imagen */
+            overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #aaa;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- Aquí puedes poner la ruta de la imagen -->
+       <img src="Users\pedro\Desktop\pruebas\fotospagina\mapa.png" alt="MAPA" width="150">
+    </div>
+
+    <div class="footer">
+        © 2024 Archivo General del IPN. Todos los derechos reservados.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Fondo claro */
+            height: 100%; /* Asegura que ocupe toda la altura */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Centra el contenido vertical y horizontalmente */
+        }
+
+        .contenedor {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 800px;
+            max-width: 90%; /* Asegura que el contenedor se ajuste a pantallas pequeñas */
+            overflow: hidden; /* Oculta cualquier contenido que sobrepase el contenedor */
+        }
+
+        .video-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        iframe {
+            width: 100%; /* El iframe ocupa todo el ancho del contenedor */
+            height: 450px; /* Ajuste de la altura */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/6S-fX6WXSc4" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
